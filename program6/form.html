@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+<center>
+<h1>Registration Form</h1>
+<form>
+<table>    
+<tr>
+<th>Full Name:</th>
+<td><input type="text" name="fullname" required></td>
+</tr>
+<tr>
+<th>Mobile:</th>
+<td><input type="text" name="mobile" required></td>
+</tr>
+<tr>
+<th>Email ID:</th>
+<td><input type="email" name="email" required></td>
+</tr>
+<tr>
+<th>Age:</th>
+<td><input type="number" name="age" min="1" max="120" required></td>
+</tr>
+<tr>
+<th>Gender:</th>
+<td>
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+</td>
+</tr>
+<tr>
+<th>Date of Birth:</th>
+<td><input type="date" name="dob" required></td>
+</tr>
+<tr>
+<th>Address:</th>
+<td><textarea name="address" rows="3" cols="30"></textarea></td>
+</tr>
+<tr>
+<th>Current Study:</th>
+<td>
+<select name="study">
+<option>B.Tech</option>
+<option>B.Sc</option>
+<option>M.Tech</option>
+<option>M.Sc</option>
+</select>
+</td>
+</tr>
+<tr>
+<th>Department:</th>
+<td>
+<select name="department">
+<option>CS</option>
+<option>IT</option>
+<option>EC</option>
+</select>
+</td>
+</tr>
+<tr>
+<th>Upload CV:</th>
+<td><input type="file" name="cv"></td>
+</tr>
+<tr>
+<th>Programming Languages:</th>
+<td>
+<input type="checkbox" name="lang" value="html"> HTML
+<input type="checkbox" name="lang" value="reactjs"> ReactJS
+<input type="checkbox" name="lang" value="css"> CSS
+<input type="checkbox" name="lang" value="flutter"> Flutter
+</td>
+</tr>
+<tr>
+<th>Language:</th>
+<td>
+ <input type="checkbox" name="language" value="english"> English
+<input type="checkbox" name="language" value="malayalam"> Malayalam
+<input type="checkbox" name="language" value="arabic"> Arabic
+<input type="checkbox" name="language" value="hindi"> Hindi
+</td>
+</tr>
+<tr>
+<td colspan="2" class="buttons">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>
+

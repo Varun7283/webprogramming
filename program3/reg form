@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>registration form</title>
+<body bgcolor="pink"><center>
+<h1 align=center> Registration Form </h1></th></tr>
+<table><tr><th>
+<form>
+<tr>
+<th>full name</th>
+<td><input type="text"name="fullname"></td>
+</tr>
+<tr>
+<th>mobile</th>
+<td><input type="text"name="mobile"></td>
+</tr>
+<tr>
+<th>Email id:</th>
+<td><input type="email"name="email"></td>
+</tr>
+<tr>
+<th>Age:</th>
+<td><input type="number"name="age"><td>
+</tr>
+<tr>
+<th>Gender:</th>
+<td><input type="radio"name="gender"value="male">Male
+<input type="radio"name="gender"value="female">Female
+</td>
+</tr>
+<tr>
+<th>date of birth:</label></th>
+<td><input type="date"name="dob"></td>
+</tr>
+<tr><th>
+<div>
+  <label for="Address" style="vertical-align: top;">Address:</label></th><td>
+  <textarea id="Address" name="Address" rows="3" cols="30"></textarea></td>
+</div></tr>
+<tr><th>
+Current Study:</label></th><td>
+    <select name="study">
+        <option>B.Tech</option>
+        <option>B.Sc</option>
+        <option>M.Tech</option>
+        <option>M.Sc</option>
+    </select></td>
+    </tr>
+<tr>
+   <th> <label>Department:</label></th>
+   <td> <select name="department">
+        <option>CS</option>
+        <option>IT</option>
+        <option>EC</option>
+        <option>EEE</option>
+    </select></td>
+</tr>
+<tr>
+   <th> <label>Upload CV:</label></th>
+    <td><input type="file" name="cv"></td>
+</tr>
+<tr>
+    <th><label>Programming Languages:</label><br></th>
+  <td>  <input type="checkbox" name="lang" value="html"> HTML
+    <input type="checkbox" name="lang" value="reactjs"> ReactJS
+    <input type="checkbox" name="lang" value="css"> CSS
+    <input type="checkbox" name="lang" value="flutter"> Flutter
+    </td>
+</tr>
+<tr>
+   <th> <label>Language:</label></th>
+   <td> <input type="checkbox" name="language" value="english"> English
+    <input type="checkbox" name="language" value="malayalam"> Malayalam
+    <input type="checkbox" name="language" value="arabic"> Arabic
+    <input type="checkbox" name="language" value="hindi"> Hindi
+   </td> </tr>
+<tr><td>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset"></td></tr>
+   
+</form>
+</table>
+</body>
+</html>
+
+
+

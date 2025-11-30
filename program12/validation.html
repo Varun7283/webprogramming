@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Registration Form</title>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form onsubmit="return validateForm()">
+        <label>Full Name:</label><br>
+        <input type="text" id="name"><br><br>
+
+        <label>Email (Gmail only):</label><br>
+        <input type="text" id="email"><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" id="password"><br><br>
+
+        <label>Confirm Password:</label><br>
+        <input type="password" id="confirmPassword"><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <p id="errorMessage" style="color:red;"></p>
+
+    <script>
+        function validateForm() {
+            // Get form values
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+
+            
+            var error = document.getElementById("errorMessage");
+
+            
+            error.textContent = "";
+
+            
+            if (name === "" || email === "" || password === "" || confirmPassword === "") {
+                error.textContent = "All fields are required!";
+                return false;
+            }
+
+            
+            if (!email.endsWith("@gmail.com")) {
+                error.textContent = "Email must be a valid Gmail address (example@gmail.com)";
+                return false;
+            }
+
+           
+            if (password !== confirmPassword) {
+                error.textContent = "Passwords do not match!";
+                return false;
+            }
+
+           
+            alert("Registration Successful!");
+            return true;
+        }
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript String and Math Functions</title>
+</head>
+<body>
+
+  <h1>Predefined Functions in JavaScript</h1>
+
+  <h2>String Functions</h2>
+  <p id="stringDemo"></p>
+
+  <h2>Math Functions</h2>
+  <p id="mathDemo"></p>
+
+  <script>
+    // String functions
+    let text = "Hello World";
+    let length = text.length;            // Finds the length
+    let upper = text.toUpperCase();      // Converts to uppercase
+    let lower = text.toLowerCase();      // Converts to lowercase
+    let position = text.indexOf("World");// Finds position of "World"
+
+    document.getElementById("stringDemo").innerHTML =
+      "Original String: " + text + "<br>" +
+      "Length: " + length + "<br>" +
+      "Uppercase: " + upper + "<br>" +
+      "Lowercase: " + lower + "<br>" +
+      "Position of 'World': " + position;
+
+    // Math functions
+    let num = 7.8;
+    let roundVal = Math.round(num);
+    let floorVal = Math.floor(num);
+    let ceilVal = Math.ceil(num);
+    let randomVal = Math.random();
+
+    document.getElementById("mathDemo").innerHTML =
+      "Number: " + num + "<br>" +
+      "Math.round(): " + roundVal + "<br>" +
+      "Math.floor(): " + floorVal + "<br>" +
+      "Math.ceil(): " + ceilVal + "<br>" +
+      "Math.random(): " + randomVal;
+  </script>
+
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calendar</title>
+</head>
+<body>
+  <h2>Calendar Generator</h2>
+  <script>
+    let year = prompt("Enter a year:");
+    year = parseInt(year);
+    if (isNaN(year)) {
+      document.write("Please enter a valid number!");
+    } else {
+      for (let month = 0; month < 12; month++) {
+        let monthName = new Date(year, month).toLocaleString('default', { month: 'long' });
+        document.write("<h3>" + monthName + " " + year + "</h3>");
+        let daysInMonth = new Date(year, month + 1, 0).getDate();
+        for (let day = 1; day <= daysInMonth; day++) {
+          document.write(day + " ");
+        }
+
+        document.write("<hr>");
+      }
+    }
+  </script>
+</body>
+</html>
+

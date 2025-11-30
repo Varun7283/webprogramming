@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Handling</title>
+</head>
+<body>
+  <center>
+    <h1>JavaScript Event Handling</h1>
+    <h3>Click on the button to change the background color</h3>
+    <button id="btn">Click Here</button>
+  </center>
+
+  <script>
+    const b = document.getElementById("btn");
+    b.addEventListener("click", changeC);
+
+    function changeC() {
+      const r = "#" + Math.floor(Math.random() * 16777215).toString(16);
+      document.body.style.backgroundColor = r;
+    }
+  </script>
+</body>
+</html>
+
